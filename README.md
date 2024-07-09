@@ -65,3 +65,5 @@ Use Quarkus Messaging
 
 [Related Apache AMQP 1.0 guide section...](https://quarkus.io/guides/amqp)
 
+```docker-compose up -d```
+
