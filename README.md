@@ -67,3 +67,8 @@ Use Quarkus Messaging
 
 ```docker-compose up -d```
 
+```curl --location 'http://localhost:8080/document/api/v1' \
+--header 'Content-Type: application/json' \
+--data '{
+    "text": "aaaaa"
+}'```
