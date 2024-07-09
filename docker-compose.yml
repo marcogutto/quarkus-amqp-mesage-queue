@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  amq-broker:
+    image: registry.redhat.io/amq7/amq-broker:7.8-34.1669831362
+    ports:
+      - "8161:8161"
+      - "5672:5672"
+    environment:
+      - AMQ_USER=admin
+      - AMQ_PASSWORD=admin
