@@ -15,11 +15,14 @@ public class ConsumerService {
     private static final Logger logger = LoggerFactory.getLogger(ConsumerService.class);
     
     @Incoming("words-in")
-    public void processaMensagemAssincrona(JsonObject d) {
+    @Outgoing("words")
+    public Document processaMensagemAssincrona(JsonObject d) {
 
         Document document = d.mapTo(Document.class);
 
         logger.info("Documento recebido da fila: " + document.getText());
+
+        return document;
 
     }
 

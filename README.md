@@ -67,8 +67,13 @@ Use Quarkus Messaging
 
 ```docker-compose up -d```
 
+#### Sending a Document
 ```curl --location 'http://localhost:8080/document/api/v1' \
 --header 'Content-Type: application/json' \
 --data '{
+    "id": "1",
     "text": "aaaaa"
 }'```
+
+#### Receive a Message Webhook
+```curl --location 'http://localhost:8080/document/api/v1/1'```
