@@ -77,3 +77,6 @@ Use Quarkus Messaging
 
 #### Receive a Message Webhook
 ```curl --location 'http://localhost:8080/document/api/v1/1'```
+
+#### Liveness and Readiness
+```curl --location 'http://localhost:8080/document/api/q/health/live'```
